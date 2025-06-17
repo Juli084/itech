@@ -3,16 +3,12 @@ import Header from './components/Header';
 import DeviceSelector from './components/DeviceSelector';
 import ProblemSelector from './components/ProblemSelector';
 import ResultSummary from './components/ResultSummary';
-import priceTable from './data/priceTable';
 
 function App() {
   const [selectedModel, setSelectedModel] = useState('');
   const [selectedProblems, setSelectedProblems] = useState([]);
-
-  const total = selectedProblems.reduce((acc, problem) => {
-    const price = priceTable[selectedModel]?.[problem] || 0;
-    return acc + price;
-  }, 0);
+  const [customerName, setCustomerName] = useState('');
+  const [note, setNote] = useState('');
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] text-[#1d1d1f]">
@@ -30,7 +26,10 @@ function App() {
           <ResultSummary
             selectedModel={selectedModel}
             selectedProblems={selectedProblems}
-            total={total}
+            customerName={customerName}
+            setCustomerName={setCustomerName}
+            note={note}
+            setNote={setNote}
           />
         )}
       </main>
