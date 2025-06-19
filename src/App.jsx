@@ -3,6 +3,7 @@ import Header from './components/Header';
 import DeviceSelector from './components/DeviceSelector';
 import ProblemSelector from './components/ProblemSelector';
 import ResultSummary from './components/ResultSummary';
+import HeroSection from './components/HeroSection';
 
 function App() {
   const [selectedModel, setSelectedModel] = useState('');
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#f5f5f7] text-[#1d1d1f]">
       <Header />
+      <HeroSection />
       <main className="max-w-2xl mx-auto px-6 py-10">
         <DeviceSelector
           selectedModel={selectedModel}

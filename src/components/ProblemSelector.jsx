@@ -1,11 +1,12 @@
 import {
-  ScreenShare,
-  BatteryCharging,
+  BatteryLow,
   Power,
   Volume2,
   Camera,
   CircleAlert,
   Zap,
+  Droplet,
+  Smartphone,
 } from "lucide-react";
 
 export default function ProblemSelector({ selectedProblems, setSelectedProblems }) {
@@ -16,17 +17,19 @@ export default function ProblemSelector({ selectedProblems, setSelectedProblems 
     "Sem áudio",
     "Câmera não funciona",
     "Botão Home falhando",
-    "Travamentos"
+    "Travamentos",
+    "Aparelho molhado",
   ];
 
   const icons = {
-    "Tela quebrada": <ScreenShare size={20} />,
-    "Bateria descarregando rápido": <BatteryCharging size={20} />,
+    "Tela quebrada": <Smartphone size={20} />,
+    "Bateria descarregando rápido": <BatteryLow size={20} />,
     "iPhone não liga": <Power size={20} />,
     "Sem áudio": <Volume2 size={20} />,
     "Câmera não funciona": <Camera size={20} />,
     "Botão Home falhando": <CircleAlert size={20} />,
     "Travamentos": <Zap size={20} />,
+    "Aparelho molhado": <Droplet size={20} />
   };
 
   const toggleProblem = (problem) => {

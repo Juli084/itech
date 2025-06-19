@@ -12,13 +12,13 @@ const iphoneModels = [
 ];
 
 export default function DeviceSelector({ selectedModel, setSelectedModel }) {
-  const [deviceType, setDeviceType] = useState("iPhone"); // ou "iPad"
+  const [deviceType, setDeviceType] = useState("iPhone");
   const [customModel, setCustomModel] = useState("");
 
   const handleDeviceChange = (e) => {
     const type = e.target.value;
     setDeviceType(type);
-    setSelectedModel(""); // limpa o modelo anterior
+    setSelectedModel("");
   };
 
   const handleCustomModelChange = (e) => {
@@ -54,7 +54,6 @@ export default function DeviceSelector({ selectedModel, setSelectedModel }) {
         </label>
       </div>
 
-      {/* Se iPhone, mostra dropdown */}
       {deviceType === "iPhone" && (
         <Listbox value={selectedModel} onChange={setSelectedModel}>
           <div className="relative">
@@ -106,7 +105,6 @@ export default function DeviceSelector({ selectedModel, setSelectedModel }) {
         </Listbox>
       )}
 
-      {/* Se iPad, mostra campo de texto */}
       {deviceType === "iPad" && (
         <input
           type="text"

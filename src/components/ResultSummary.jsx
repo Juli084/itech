@@ -27,7 +27,7 @@ Poderia me informar o valor do conserto?`;
 
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Nome ou número de série (opcional):
+          Nome:
         </label>
         <input
           type="text"
