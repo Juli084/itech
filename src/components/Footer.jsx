@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
