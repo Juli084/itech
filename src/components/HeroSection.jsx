@@ -17,7 +17,7 @@ export default function HeroSection() {
           Diagnóstico rápido e assistência especializada com qualidade e confiança.
         </p>
         <a
-          href="#formulario"
+          href="https://wa.me/5515997534529"
           className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition"
         >
           Solicitar orçamento

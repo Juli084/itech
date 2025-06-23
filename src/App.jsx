@@ -9,6 +9,7 @@ import ProblemSelector from './components/ProblemSelector';
 import ResultSummary from './components/ResultSummary';
 import CommonProblems from './components/CommonProblems';
 import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 function App() {
   const [selectedModel, setSelectedModel] = useState('');
@@ -43,7 +44,9 @@ function App() {
             setNote={setNote}
           />
         )}
+        
       </main>
+            <Footer />
     </div>
   );
 }
