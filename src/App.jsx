@@ -7,6 +7,8 @@ import WhyChooseUs from './components/WhyChooseUs';
 import DeviceSelector from './components/DeviceSelector';
 import ProblemSelector from './components/ProblemSelector';
 import ResultSummary from './components/ResultSummary';
+import CommonProblems from './components/CommonProblems';
+import Testimonials from './components/Testimonials';
 
 function App() {
   const [selectedModel, setSelectedModel] = useState('');
@@ -19,6 +21,9 @@ function App() {
       <Navbar />
       <HeroSection />
       <WhyChooseUs />
+      <CommonProblems />
+      <Testimonials />
+
       <main className="max-w-2xl mx-auto px-6 py-10">
         <DeviceSelector
           selectedModel={selectedModel}
